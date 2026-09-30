@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Button</title>
+  <meta name="description" content="One button. One owner. Pay more than the owner and this whole page is yours.">
+  <meta name="theme-color" content="#0a1433">
+  <meta property="og:title" content="The Button">
+  <meta property="og:description" content="One button. One owner. Pay more than the owner and this whole page is yours.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:ital,wght@0,500;0,600;0,700;0,800;1,700;1,800&family=Share+Tech+Mono&family=Big+Shoulders+Display:wght@800;900&family=Bebas+Neue&family=Inter:wght@400;700;800&family=Pacifico&family=Permanent+Marker&family=Playfair+Display:wght@700;900&family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-stats" viewBox="0 0 24 24"><path d="M5 20V11M12 20V5M19 20v-6"/></symbol>
+      <symbol id="i-history" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 11v5.5M12 7.8v.1"/></symbol>
+      <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.7 14.2a4.2 4.2 0 0 0 6.6 0M9.2 9.6v.1M14.8 9.6v.1"/></symbol>
+      <symbol id="i-share" viewBox="0 0 24 24"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M5 13.5V18a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4.5"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 15.5V4.5M7.5 9 12 4.5 16.5 9M5 19.5h14"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.8"/></symbol>
+      <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4.5 19.5h4l10-10-4-4-10 10v4zM13 7l4 4"/></symbol>
+      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M6.5 9.5 12 15l5.5-5.5"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h4"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+      <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.5"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.8v12.4L18.2 12z"/></symbol>
+      <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8.5 6v12M15.5 6v12"/></symbol>
+      <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
+      <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></symbol>
+      <symbol id="i-music" viewBox="0 0 24 24"><path d="M9 17.5V6l10-2v11.5"/><circle cx="6.5" cy="17.5" r="2.5"/><circle cx="16.5" cy="15.5" r="2.5"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><circle cx="9" cy="10" r="1.6"/><path d="M20.5 16l-5-5-8 8.5"/></symbol>
+      <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- SVG filters for the "unhinged" background looks -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <filter id="f-warm" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1.12 0 0 0 0.04  0 1.03 0 0 0.01  0 0 0.84 0 0  0 0 0 1 0"/></filter>
+    <filter id="f-cool" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="0.88 0 0 0 0  0 1.01 0 0 0.02  0 0 1.16 0 0.05  0 0 0 1 0"/></filter>
+    <filter id="f-thermal" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values=".33 .33 .33 0 0  .33 .33 .33 0 0  .33 .33 .33 0 0  0 0 0 1 0"/>
+      <feComponentTransfer>
+        <feFuncR type="table" tableValues="0 0.1 0.85 1 1"/>
+        <feFuncG type="table" tableValues="0 0 0.15 0.8 1"/>
+        <feFuncB type="table" tableValues="0.25 0.75 0.3 0 0.9"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="f-duotone" color-interpolation-filters="sRGB">
+      <feColorMatrix type="matrix" values=".33 .33 .33 0 0  .33 .33 .33 0 0  .33 .33 .33 0 0  0 0 0 1 0"/>
+      <feComponentTransfer>
+        <feFuncR id="duoR" type="table" tableValues="0.1 1"/>
+        <feFuncG id="duoG" type="table" tableValues="0.04 0.82"/>
+        <feFuncB id="duoB" type="table" tableValues="0.23 0.25"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="f-posterize" color-interpolation-filters="sRGB">
+      <feComponentTransfer>
+        <feFuncR type="discrete" tableValues="0 0.33 0.66 1"/>
+        <feFuncG type="discrete" tableValues="0 0.33 0.66 1"/>
+        <feFuncB type="discrete" tableValues="0 0.33 0.66 1"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="f-liquid" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.008 0.018" numOctaves="2" seed="4">
+        <animate attributeName="baseFrequency" dur="12s" values="0.008 0.018;0.013 0.03;0.008 0.018" repeatCount="indefinite"/>
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" scale="45" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+
+  <!-- The stage: everything here belongs to the owner -->
+  <div class="stage" id="stage">
+    <div class="stage-bgwrap" id="bgWrap" aria-hidden="true"><div class="stage-bg" id="bg"></div></div>
+    <div class="stage-fx" id="bgFx" aria-hidden="true"></div>
+    <div class="stage-grain" id="bgGrain" aria-hidden="true"></div>
+    <canvas class="viz-particles" id="vizParticles" aria-hidden="true"></canvas>
+    <div class="stage-pattern" id="pattern" aria-hidden="true"></div>
+    <div class="stage-floaters" id="floaters" aria-hidden="true"></div>
+    <div class="wipe" id="wipe" aria-hidden="true" hidden></div>
+    <main class="stage-content" id="content">
+      <h1 id="headline"></h1>
+      <p id="tagline"></p>
+      <div class="housing" id="housing">
+        <div class="beat" id="beat" aria-hidden="true"></div>
+        <button id="theButton" class="cap"><span class="cap-label"></span></button>
+      </div>
+      <nav class="owner-links" id="links" aria-label="Links from the owner"></nav>
+    </main>
+    <div class="breaking" id="sold" hidden aria-hidden="true">
+      <span class="breaking-tag">Breaking</span>
+      <span class="breaking-text"><b id="soldName"></b> takes the button for <span class="num" id="soldAmount"></span></span>
+    </div>
+    <span class="preview-tag" id="previewTag" hidden>Preview · not on air yet</span>
+  </div>
+
+  <!-- Site chrome: floats over the stage -->
+  <div class="crt" aria-hidden="true"><span class="tracking"></span></div>
+  <div class="static" id="static" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="bug" href="/" aria-label="The Button, home"><span class="bars" aria-hidden="true"></span><span class="bug-name">The Button</span><span class="bug-ch">CH 01</span></a>
+    <span class="demo-tag" id="demoBadge" hidden>Demo</span>
+    <div class="topbar-right">
+      <span class="onair" title="The page is live"><span class="rec" aria-hidden="true"></span><span class="onair-label">On air</span></span>
+      <span class="live" title="People on this page right now"><span class="num" id="viewers">0</span><span class="live-label">watching</span></span>
+      <button class="btn glass-btn" id="editBtn" hidden><svg class="ico"><use href="#i-pencil"/></svg><span>Edit page</span></button>
+      <button class="btn primary" data-open-bid>Bid <span class="num" data-min-bid>–</span></button>
+    </div>
+  </header>
+
+  <section class="lower-third" id="lowerThird" aria-label="Who owns the button" aria-live="polite">
+    <span class="lt-tag" id="ltTag">Now on air</span>
+    <div class="lt-main">
+      <span class="lt-name" id="ltName">…</span>
+      <span class="lt-meta" id="ltMeta"></span>
+    </div>
+  </section>
+
+  <div class="crawl" aria-label="Latest takeovers">
+    <span class="crawl-tag">Live</span>
+    <div class="crawl-view"><div class="crawl-track" id="ticker"></div></div>
+    <span class="crawl-clock num" id="clock" aria-label="Current time">00:00:00</span>
+  </div>
+
+  <nav class="dock" aria-label="More">
+    <button class="dock-btn" data-pop="statsPop"><svg class="ico"><use href="#i-stats"/></svg><span>Stats</span></button>
+    <button class="dock-btn" data-pop="historyPop"><svg class="ico"><use href="#i-history"/></svg><span>History</span></button>
+    <button class="dock-btn" data-pop="howPop"><svg class="ico"><use href="#i-info"/></svg><span>How it works</span></button>
+    <span class="dock-sep" aria-hidden="true"></span>
+    <button class="dock-btn" id="musicBtn" aria-expanded="false" aria-controls="playerCard" hidden><svg class="ico"><use href="#i-music"/></svg><span>Music</span></button>
+    <button class="dock-btn" id="reactBtn" aria-expanded="false" aria-controls="reactTray"><svg class="ico"><use href="#i-smile"/></svg><span>React</span></button>
+    <button class="dock-btn" id="shareBtn"><svg class="ico"><use href="#i-share"/></svg><span>Share</span></button>
+  </nav>
+  <div class="react-tray" id="reactTray" role="toolbar" aria-label="Send a reaction everyone sees" hidden>
+    <button data-react="🔥" aria-label="Fire">🔥</button>
+    <button data-react="😂" aria-label="Laugh">😂</button>
+    <button data-react="😍" aria-label="Love">😍</button>
+    <button data-react="👏" aria-label="Applause">👏</button>
+    <button data-react="🤯" aria-label="Mind blown">🤯</button>
+    <button data-react="💸" aria-label="Money">💸</button>
+  </div>
+
+  <div class="player-card" id="playerCard" role="region" aria-label="Soundtrack" hidden>
+    <div class="player-head"><span class="player-tag">Soundtrack</span><span class="player-note">Press play to listen</span><button class="icon-btn" id="playerClose" aria-label="Hide the player (music keeps playing)"><svg class="ico"><use href="#i-close"/></svg></button></div>
+    <div class="player-frame" id="playerFrame"></div>
+  </div>
+
+  <div id="reactionsLayer" aria-hidden="true"></div>
+  <button class="btn primary back-pill" id="backToEdit" hidden><svg class="ico"><use href="#i-pencil"/></svg>Back to editing</button>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <!-- ─────────────── Popups ─────────────── -->
+
+  <dialog class="pop pop-stats" id="statsPop" aria-labelledby="statsTitle">
+    <header class="pop-head">
+      <div>
+        <p class="eyebrow live-eyebrow"><span class="live-dot" aria-hidden="true"></span>Live</p>
+        <h2 id="statsTitle">Stats</h2>
+      </div>
+      <button class="icon-btn" data-close aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button>
+    </header>
+    <div class="pop-body">
+      <section class="hero-card" aria-label="Right now">
+        <div class="hero-main">
+          <span class="label" id="sPriceLabel">Current price</span>
+          <span class="hero-price" id="sPrice">–</span>
+          <span class="hero-owner" id="sOwnerLine"></span>
+        </div>
+        <div class="hero-side">
+          <div><span class="label">Held for</span><span class="hero-stat num" id="sHeld">–</span></div>
+          <div><span class="label">Watching now</span><span class="hero-stat num"><span class="live-dot" aria-hidden="true"></span><span id="sWatching">–</span></span></div>
+        </div>
+      </section>
+
+      <section class="group">
+        <h3>This reign <span class="aside" id="reignOwner"></span></h3>
+        <div class="tiles">
+          <div class="tile"><svg class="ico"><use href="#i-eye"/></svg><span class="tile-v num" id="mViews">0</span><span class="label">Page views</span></div>
+          <div class="tile"><svg class="ico"><use href="#i-target"/></svg><span class="tile-v num" id="mPresses">0</span><span class="label">Presses</span></div>
+          <div class="tile tile-rate">
+            <svg class="gauge" viewBox="0 0 36 36" aria-hidden="true"><circle class="gauge-track" cx="18" cy="18" r="15.915"/><circle class="gauge-val" id="rateGauge" cx="18" cy="18" r="15.915" stroke-dasharray="0 100"/></svg>
+            <span class="tile-v num" id="mRate">–</span><span class="label">Press rate</span>
+          </div>
+          <div class="tile"><svg class="ico"><use href="#i-smile"/></svg><span class="tile-v num" id="mReacts">0</span><span class="label">Reactions</span></div>
+        </div>
+      </section>
+
+      <section class="group">
+        <h3>Price history <span class="aside num" id="chartRange"></span></h3>
+        <div class="chart-box" id="chartBox">
+          <svg id="chart" viewBox="0 0 600 150" preserveAspectRatio="none" role="img" aria-label="Price of the button over time">
+            <defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#3fe0ff" stop-opacity=".28"/><stop offset="1" stop-color="#3fe0ff" stop-opacity="0"/></linearGradient></defs>
+            <g id="chartPaths"></g>
+          </svg>
+          <div class="chart-dots" id="chartDots"></div>
+          <div class="chart-tip" id="chartTip" hidden></div>
+          <div class="chart-empty" id="chartEmpty" hidden>
+            <svg class="ico"><use href="#i-stats"/></svg>
+            <span>No bids yet. The first one starts the chart.</span>
+          </div>
+        </div>
+        <div class="chart-axis" id="chartAxis"><span id="axisStart"></span><span>Now</span></div>
+      </section>
+
+      <section class="group">
+        <h3>All time</h3>
+        <div class="alltime">
+          <div><span class="label">Raised</span><span class="num" id="aRaised">–</span><span class="sub" id="aRaisedSub"></span></div>
+          <div><span class="label">Owners</span><span class="num" id="aOwners">–</span><span class="sub">so far</span></div>
+          <div><span class="label">Visitors</span><span class="num" id="aVisitors">–</span><span class="sub" id="aVisitorsSub"></span></div>
+          <div><span class="label">Peak watching</span><span class="num" id="aPeak">–</span><span class="sub">at once</span></div>
+          <div><span class="label">Longest reign</span><span class="num" id="aLongest">–</span><span class="sub" id="aLongestSub"></span></div>
+          <div><span class="label">Price growth</span><span class="num" id="aGrowth">–</span><span class="sub">since the first bid</span></div>
+        </div>
+      </section>
+    </div>
+    <footer class="pop-foot pop-cta">
+      <span>Take it for <b class="num" data-min-bid>–</b></span>
+      <button class="btn primary" data-open-bid>Take the button</button>
+    </footer>
+  </dialog>
+
+  <dialog class="pop pop-history" id="historyPop" aria-labelledby="historyTitle">
+    <header class="pop-head">
+      <div><p class="eyebrow">Previously on</p><h2 id="historyTitle">History</h2></div>
+      <button class="icon-btn" data-close aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button>
+    </header>
+    <div class="pop-body">
+      <div class="hist-summary" id="histSummary"></div>
+      <div class="hist-controls" id="histControls">
+        <div class="seg" role="tablist" aria-label="Sort owners">
+          <button type="button" role="tab" data-sort="latest" aria-selected="true">Latest</button>
+          <button type="button" role="tab" data-sort="amount">Top bids</button>
+          <button type="button" role="tab" data-sort="held">Longest</button>
+          <button type="button" role="tab" data-sort="clicks">Presses</button>
+        </div>
+        <label class="hist-search"><svg class="ico"><use href="#i-search"/></svg><input type="search" id="histSearch" placeholder="Find an owner" aria-label="Find an owner"></label>
+      </div>
+      <ol class="episodes" id="historyList"></ol>
+      <p class="empty" id="historyEmpty" hidden>Nobody has owned the button yet. The first name here costs <b class="num" data-min-bid>–</b>.</p>
+      <p class="empty" id="historyNoMatch" hidden>No owner matches that name.</p>
+    </div>
+    <footer class="pop-foot pop-cta">
+      <span>Take it for <b class="num" data-min-bid>–</b></span>
+      <button class="btn primary" data-open-bid>Take the button</button>
+    </footer>
+  </dialog>
+
+  <dialog class="pop" id="howPop" aria-labelledby="howTitle">
+    <header class="pop-head">
+      <div><p class="eyebrow">Viewer guide</p><h2 id="howTitle">How it works</h2></div>
+      <button class="icon-btn" data-close aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button>
+    </header>
+    <div class="pop-body">
+      <ol class="how">
+        <li><span class="step-no">1</span><div><b>Bid more than the owner.</b><p>The minimum is the current price plus 5%, and at least $1.</p></div></li>
+        <li><span class="step-no">2</span><div><b>Make the page yours.</b><p>Pick a theme, add your logo, your words and your colors. You see it live before you pay.</p></div></li>
+        <li><span class="step-no">3</span><div><b>Point it anywhere.</b><p>Your site, a video, a song or a blog post. Every press of the button sends people there.</p></div></li>
+        <li><span class="step-no">4</span><div><b>Keep it until someone pays more.</b><p>You get a private link to edit your page, and stats on every view and press.</p></div></li>
+      </ol>
+      <p class="fine"><span id="modeNote"></span> <button class="linklike" id="reportBtn">Report this page</button></p>
+    </div>
+  </dialog>
+
+  <dialog class="pop pop-media" id="mediaPop" aria-label="Featured media">
+    <header class="pop-head">
+      <h2 id="mediaTitle">Featured</h2>
+      <button class="icon-btn" data-close aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button>
+    </header>
+    <div class="pop-body embed" id="mediaBody"></div>
+  </dialog>
+
+  <dialog class="pop receipt" id="wonDialog" aria-labelledby="receiptTitle">
+    <div class="pop-body">
+      <span class="receipt-check" aria-hidden="true"><svg class="ico"><use href="#i-check"/></svg></span>
+      <h2 id="receiptTitle">You're on air.</h2>
+      <dl class="receipt-lines">
+        <div><dt>Owner</dt><dd id="rName"></dd></div>
+        <div><dt>Paid</dt><dd class="num" id="rAmount"></dd></div>
+        <div><dt>Since</dt><dd id="rTime"></dd></div>
+      </dl>
+      <p class="receipt-note">This private link lets you edit your page from any device until someone outbids you. Keep it to yourself.</p>
+      <div class="copyrow"><input id="editLink" readonly aria-label="Your private edit link"><button class="btn glass-btn" id="copyEdit">Copy</button></div>
+    </div>
+    <footer class="pop-foot"><form method="dialog"><button class="btn primary block">See my page</button></form></footer>
+  </dialog>
+
+  <!-- Bid / edit wizard -->
+  <dialog class="pop wizard" id="bidPop" aria-labelledby="wizTitle">
+    <form id="bidForm" autocomplete="off" novalidate>
+      <header class="pop-head">
+        <div>
+          <p class="eyebrow" id="wizEyebrow">Step 1 of 3</p>
+          <h2 id="wizTitle">Your bid</h2>
+        </div>
+        <div class="head-actions">
+          <button type="button" class="btn glass-btn sm" id="previewBtn"><svg class="ico"><use href="#i-eye"/></svg>Preview</button>
+          <button type="button" class="icon-btn" data-close aria-label="Close"><svg class="ico"><use href="#i-close"/></svg></button>
+        </div>
+      </header>
+      <div class="progress" id="progress" aria-hidden="true"></div>
+
+      <div class="pop-body">
+        <!-- Step 1: bid -->
+        <section data-step="1" class="step">
+          <label class="field"><span class="label">Name shown on the page</span>
+            <input name="name" maxlength="40" placeholder="Your name or brand">
+          </label>
+          <div class="field">
+            <label class="label" for="amount">Your bid</label>
+            <div class="money"><span class="money-cur" id="curSym">$</span><input id="amount" name="amount" type="number" inputmode="decimal" step="0.01" min="0.01"></div>
+            <div class="chips">
+              <button type="button" class="chip" data-raise="0">Minimum</button>
+              <button type="button" class="chip" data-raise="10">+10%</button>
+              <button type="button" class="chip" data-raise="25">+25%</button>
+              <button type="button" class="chip" data-raise="50">+50%</button>
+            </div>
+            <p class="help">Minimum <b class="num" data-min-bid>–</b>. The page is yours until someone bids more.</p>
+          </div>
+        </section>
+
+        <!-- Step 2: look -->
+        <section data-step="2" class="step" hidden>
+          <div class="field"><span class="label">Theme</span><div class="themes" id="presets"></div></div>
+          <div class="field">
+            <span class="label">Your logo or product</span>
+            <div class="logo-row">
+              <span class="logo-thumb" id="logoThumb" aria-hidden="true"></span>
+              <div class="upload-row">
+                <input id="logoUrl" type="url" data-url="upload" placeholder="Paste an image link" aria-label="Logo image link">
+                <button type="button" class="btn glass-btn sm" data-upload="logoUrl"><svg class="ico"><use href="#i-upload"/></svg>Upload</button>
+              </div>
+            </div>
+            <p class="help">It floats around your page and bursts out when someone presses the button. Transparent PNGs look best.</p>
+          </div>
+          <label class="field"><span class="label">Headline</span><input name="headline" maxlength="80" placeholder="The first thing people read"></label>
+          <label class="field"><span class="label">Tagline</span><textarea name="tagline" maxlength="220" rows="2" placeholder="A sentence about what you're promoting"></textarea></label>
+          <label class="field"><span class="label">Button text <span class="count" data-count="buttonText"></span></span><input name="buttonText" maxlength="32" placeholder="Shop now"></label>
+          <div class="field">
+            <span class="label">Colors</span>
+            <div class="swatches">
+              <label class="swatch"><input type="color" name="buttonColor"><span>Button</span></label>
+              <label class="swatch"><input type="color" name="buttonTextColor"><span>Label</span></label>
+              <label class="swatch"><input type="color" name="textColor"><span>Text</span></label>
+            </div>
+          </div>
+          <button type="button" class="more-row" id="moreBtn">
+            <svg class="ico"><use href="#i-sliders"/></svg>
+            <span><b>Customize more</b><span>Background, typeface, floating layers and effects</span></span>
+            <svg class="ico"><use href="#i-arrow"/></svg>
+          </button>
+        </section>
+
+        <!-- Step 3: link & media -->
+        <section data-step="3" class="step" hidden>
+          <label class="field"><span class="label">Where a press takes people</span>
+            <input name="linkUrl" type="url" data-url="web" placeholder="https://your-site.com">
+            <span class="help">Leave it empty and the button just counts presses.</span>
+          </label>
+          <div class="field"><span class="label">Featured video, song or page</span>
+            <div class="upload-row">
+              <input name="embedUrl" type="url" data-url="upload" placeholder="YouTube, Vimeo, Spotify or any link" aria-label="Featured media link">
+              <button type="button" class="btn glass-btn sm" data-upload="embedUrl"><svg class="ico"><use href="#i-upload"/></svg>Image</button>
+            </div>
+            <span class="help" id="embedHint"></span>
+          </div>
+          <div class="field"><span class="label">Extra links</span>
+            <div class="linkrow" data-link="0"><input name="l0label" maxlength="30" placeholder="Label" aria-label="Link 1 label"><input name="l0url" type="url" data-url="web" placeholder="https://" aria-label="Link 1 address"></div>
+            <div class="linkrow" data-link="1"><input name="l1label" maxlength="30" placeholder="Label" aria-label="Link 2 label"><input name="l1url" type="url" data-url="web" placeholder="https://" aria-label="Link 2 address"></div>
+            <div class="linkrow" data-link="2"><input name="l2label" maxlength="30" placeholder="Label" aria-label="Link 3 label"><input name="l2url" type="url" data-url="web" placeholder="https://" aria-label="Link 3 address"></div>
+            <button type="button" class="add-link" id="addLink"><svg class="ico"><use href="#i-plus"/></svg>Add a link</button>
+          </div>
+          <dl class="summary" id="summary"></dl>
+        </section>
+
+        <!-- Customize more -->
+        <section data-step="adv" class="step" hidden>
+          <div class="seg adv-tabs" role="tablist">
+            <button type="button" role="tab" data-adv-tab="bg">Background</button>
+            <button type="button" role="tab" data-adv-tab="type">Text</button>
+            <button type="button" role="tab" data-adv-tab="scene">Layers</button>
+            <button type="button" role="tab" data-adv-tab="fx">Effects</button>
+          </div>
+
+          <div data-adv="bg" class="adv-pane sectioned">
+            <section class="field text-group"><h3 class="sec-title">Type</h3>
+              <div class="seg" role="radiogroup"><label><input type="radio" name="bgType" value="solid"><span>Solid</span></label><label><input type="radio" name="bgType" value="gradient"><span>Gradient</span></label><label><input type="radio" name="bgType" value="mesh"><span>Mesh</span></label><label><input type="radio" name="bgType" value="image"><span>Image</span></label></div>
+              <p class="help" id="bgTypeHint"></p>
+            </section>
+
+            <section class="field text-group" data-show="solid gradient mesh image"><h3 class="sec-title">Colors</h3>
+              <div data-show="gradient"><div class="seg" role="radiogroup"><label><input type="radio" name="gradStyle" value="linear"><span>Linear</span></label><label><input type="radio" name="gradStyle" value="radial"><span>Radial</span></label><label><input type="radio" name="gradStyle" value="conic"><span>Conic</span></label></div></div>
+              <div class="swatches">
+                <label class="swatch"><input type="color" name="bg1"><span id="bg1Label">Color</span></label>
+                <label class="swatch" data-show="gradient mesh" data-mid><input type="color" name="bg3"><span id="bg3Label">Middle</span></label>
+                <label class="swatch" data-show="gradient mesh"><input type="color" name="bg2"><span id="bg2Label">End</span></label>
+              </div>
+              <label class="toggle" data-show="gradient"><input type="checkbox" name="bg3On"><span class="toggle-track" aria-hidden="true"></span><span>Add a middle color</span></label>
+              <label class="slider" data-show="gradient" data-grad="linear conic"><span class="label">Angle</span><input type="range" name="bgAngle" min="0" max="360" step="5"><output data-for="bgAngle"></output></label>
+              <div data-show="gradient" data-grad="radial conic"><span class="label">Center</span>
+                <div class="seg" role="radiogroup"><label><input type="radio" name="gradPos" value="center"><span>Middle</span></label><label><input type="radio" name="gradPos" value="top"><span>Top</span></label><label><input type="radio" name="gradPos" value="bottom"><span>Bottom</span></label><label><input type="radio" name="gradPos" value="left"><span>Left</span></label><label><input type="radio" name="gradPos" value="right"><span>Right</span></label></div>
+              </div>
+            </section>
+
+            <section class="field text-group" data-show="image"><h3 class="sec-title">Image</h3>
+              <div class="upload-row"><input name="bgImage" type="url" data-url="upload" placeholder="https://…/photo.jpg" aria-label="Background image link"><button type="button" class="btn glass-btn sm" data-upload="bgImage"><svg class="ico"><use href="#i-upload"/></svg>Upload</button></div>
+              <span class="label">Fit</span>
+              <div class="seg" role="radiogroup"><label><input type="radio" name="bgFit" value="cover"><span>Fill</span></label><label><input type="radio" name="bgFit" value="contain"><span>Whole image</span></label><label><input type="radio" name="bgFit" value="tile"><span>Tile</span></label></div>
+              <span class="label">Focus</span>
+              <div class="seg" role="radiogroup"><label><input type="radio" name="bgPos" value="center"><span>Middle</span></label><label><input type="radio" name="bgPos" value="top"><span>Top</span></label><label><input type="radio" name="bgPos" value="bottom"><span>Bottom</span></label><label><input type="radio" name="bgPos" value="left"><span>Left</span></label><label><input type="radio" name="bgPos" value="right"><span>Right</span></label></div>
+            </section>
+
+            
+
+            <section class="field text-group" data-show="image"><h3 class="sec-title">Adjust</h3>
+              <label class="slider"><span class="label">Blur</span><input type="range" name="bgBlur" min="0" max="20"><output data-for="bgBlur"></output></label>
+              <label class="slider"><span class="label">Brightness</span><input type="range" name="bgBright" min="40" max="150" step="5"><output data-for="bgBright"></output></label>
+            </section>
+
+            <section class="field text-group" data-show="image"><h3 class="sec-title">Filter</h3>
+              <span class="label">Clean</span>
+              <div class="filters" id="filtersClean" role="radiogroup" aria-label="Clean filters"></div>
+              <span class="label">Unhinged</span>
+              <div class="filters" id="filtersWild" role="radiogroup" aria-label="Unhinged filters"></div>
+              <div class="swatches" data-when="duo">
+                <label class="swatch"><input type="color" name="duoDark"><span>Shadows</span></label>
+                <label class="swatch"><input type="color" name="duoLight"><span>Highlights</span></label>
+              </div>
+            </section>
+
+            <section class="field text-group" data-show="gradient mesh image"><h3 class="sec-title">Motion</h3>
+              <label class="toggle"><input type="checkbox" name="bgAnimate"><span class="toggle-track" aria-hidden="true"></span><span id="bgAnimLabel">Animate the background</span></label>
+              <label class="slider" data-when="bganim"><span class="label">Speed</span><input type="range" name="bgSpeed" min="0.25" max="3" step="0.25"><output data-for="bgSpeed"></output></label>
+            </section>
+
+            <section class="field text-group"><h3 class="sec-title">Overlay</h3>
+              <div class="swatches"><label class="swatch"><input type="color" name="overlayColor"><span>Tint</span></label></div>
+              <label class="slider"><span class="label">Tint</span><input type="range" name="overlayOpacity" min="0" max="0.85" step="0.05"><output data-for="overlayOpacity"></output></label>
+              <label class="slider"><span class="label">Vignette</span><input type="range" name="vignette" min="0" max="100" step="5"><output data-for="vignette"></output></label>
+              <label class="slider"><span class="label">Film grain</span><input type="range" name="grain" min="0" max="100" step="5"><output data-for="grain"></output></label>
+              <p class="help">A dark tint or vignette keeps your text readable over busy images.</p>
+            </section>
+
+            <section class="field text-group"><h3 class="sec-title">Texture</h3>
+              <div class="seg" role="radiogroup"><label><input type="radio" name="texture" value="none"><span>None</span></label><label><input type="radio" name="texture" value="dots"><span>Dots</span></label><label><input type="radio" name="texture" value="grid"><span>Grid</span></label><label><input type="radio" name="texture" value="stripes"><span>Stripes</span></label><label><input type="radio" name="texture" value="checker"><span>Checks</span></label><label><input type="radio" name="texture" value="waves"><span>Waves</span></label></div>
+              <div class="swatches" data-when="texture"><label class="swatch"><input type="color" name="textureColor"><span>Texture</span></label></div>
+              <label class="slider" data-when="texture"><span class="label">Strength</span><input type="range" name="textureOpacity" min="0.02" max="0.6" step="0.02"><output data-for="textureOpacity"></output></label>
+              <label class="slider" data-when="texture"><span class="label">Scale</span><input type="range" name="textureScale" min="8" max="80" step="2"><output data-for="textureScale"></output></label>
+            </section>
+
+            <section class="field text-group"><h3 class="sec-title">Soundtrack</h3>
+              <div class="seg" role="radiogroup" aria-label="Soundtrack source">
+                <label><input type="radio" name="audioSource" value="spotify"><span>Spotify</span></label>
+                <label><input type="radio" name="audioSource" value="file"><span>Audio file</span></label>
+              </div>
+              <div data-audio="spotify" class="field">
+                <input name="bgAudio" type="url" data-url="spotify" placeholder="https://open.spotify.com/track/…" aria-label="Spotify link">
+                <p class="help" id="audioHint"></p>
+              </div>
+              <div data-audio="file" class="field">
+                <div class="upload-row"><input name="audioFile" type="url" data-url="audio" placeholder="https://…/song.mp3" aria-label="Audio file link"><button type="button" class="btn glass-btn sm" data-upload="audioFile"><svg class="ico"><use href="#i-upload"/></svg>Upload</button></div>
+                <p class="help" id="audioFileHint"></p>
+                <label class="slider" data-when="audiofile"><span class="label">Volume</span><input type="range" name="audioVolume" min="0" max="100" step="5"><output data-for="audioVolume"></output></label>
+                <p class="help" data-when="audiofile">The volume visitors start at. They can change it, or mute, in the player.</p>
+              </div>
+            </section>
+          </div>
+
+          <div data-adv="type" class="adv-pane" hidden>
+            <section class="field text-group"><h3 class="sec-title">Typeface</h3><div class="fontpick" id="fontPick"></div></section>
+
+            <section class="field text-group"><h3 class="sec-title">Size</h3>
+              <label class="slider"><span class="label">Headline</span><input type="range" name="headlineSize" min="60" max="160" step="5"><output data-for="headlineSize"></output></label>
+              <label class="slider"><span class="label">Tagline</span><input type="range" name="taglineSize" min="70" max="150" step="5"><output data-for="taglineSize"></output></label>
+              <label class="slider"><span class="label">Spacing</span><input type="range" name="letterSpacing" min="-5" max="30"><output data-for="letterSpacing"></output></label>
+              <label class="toggle"><input type="checkbox" name="uppercase"><span class="toggle-track" aria-hidden="true"></span><span>All capitals</span></label>
+            </section>
+
+            <section class="field text-group"><h3 class="sec-title">Headline fill</h3>
+              <div class="seg" role="radiogroup" aria-label="Headline fill">
+                <label><input type="radio" name="textFill" value="solid"><span>Solid</span></label>
+                <label><input type="radio" name="textFill" value="gradient"><span>Gradient</span></label>
+              </div>
+              <div class="swatches" data-fill="gradient"><label class="swatch"><input type="color" name="textColor2"><span>Fade to</span></label></div>
+              <label class="slider" data-fill="gradient"><span class="label">Direction</span><input type="range" name="textGradAngle" min="0" max="360" step="5"><output data-for="textGradAngle"></output></label>
+              <p class="help" data-fill="gradient">Fades from your Text color to this one.</p>
+            </section>
+
+            <section class="field text-group"><h3 class="sec-title">Outline</h3>
+              <label class="slider"><span class="label">Thickness</span><input type="range" name="textStroke" min="0" max="6" step="0.5"><output data-for="textStroke"></output></label>
+              <div class="swatches" data-when="stroke"><label class="swatch"><input type="color" name="strokeColor"><span>Outline</span></label></div>
+            </section>
+
+            <section class="field text-group"><h3 class="sec-title">Shadow</h3>
+              <div class="seg" role="radiogroup" aria-label="Headline shadow">
+                <label><input type="radio" name="textShadow" value="none"><span>None</span></label>
+                <label><input type="radio" name="textShadow" value="soft"><span>Soft</span></label>
+                <label><input type="radio" name="textShadow" value="glow"><span>Glow</span></label>
+                <label><input type="radio" name="textShadow" value="hard"><span>Hard</span></label>
+                <label><input type="radio" name="textShadow" value="extrude"><span>3D</span></label>
+              </div>
+              <div class="swatches" data-when="shadow"><label class="swatch"><input type="color" name="shadowColor"><span>Shadow</span></label></div>
+            </section>
+
+            <section class="field text-group"><h3 class="sec-title">Headline animation</h3>
+              <div class="seg" role="radiogroup" aria-label="Headline animation">
+                <label><input type="radio" name="textAnim" value="none"><span>Off</span></label>
+                <label><input type="radio" name="textAnim" value="shimmer"><span>Shimmer</span></label>
+                <label><input type="radio" name="textAnim" value="pulse"><span>Pulse</span></label>
+                <label><input type="radio" name="textAnim" value="flicker"><span>Flicker</span></label>
+                <label><input type="radio" name="textAnim" value="float"><span>Float</span></label>
+              </div>
+            </section>
+          </div>
+
+          <div data-adv="scene" class="adv-pane" hidden>
+            <div class="layers" id="layers"></div>
+            <button type="button" class="add-link" id="addLayer"><svg class="ico"><use href="#i-plus"/></svg>Add a layer</button>
+            <p class="help">Up to 4 layers float behind your page: images, words, shapes or emoji. Layer 1 sits at the back and bursts out when the button is pressed.</p>
+          </div>
+
+          <div data-adv="fx" class="adv-pane sectioned" hidden>
+            <section class="field text-group"><h3 class="sec-title">Button beat</h3>
+              <div class="seg" role="radiogroup"><label><input type="radio" name="beatStyle" value="none"><span>Off</span></label><label><input type="radio" name="beatStyle" value="rings"><span>Rings</span></label><label><input type="radio" name="beatStyle" value="bars"><span>EQ</span></label><label><input type="radio" name="beatStyle" value="halo"><span>Halo</span></label><label><input type="radio" name="beatStyle" value="shock"><span>Shock</span></label><label><input type="radio" name="beatStyle" value="trap"><span>Visualizer</span></label></div>
+              <p class="help" id="beatHint"></p>
+              <label class="toggle" data-when="beat"><input type="checkbox" name="beatMatch"><span class="toggle-track" aria-hidden="true"></span><span>Match the button color</span></label>
+              <div class="swatches" data-when="beatcolor"><label class="swatch"><input type="color" name="beatColor"><span>Beat</span></label></div>
+              <label class="slider" data-when="beat"><span class="label">Tempo</span><input type="range" name="beatBpm" min="60" max="180" step="2"><output data-for="beatBpm"></output></label>
+              <label class="slider" data-when="beat"><span class="label">Intensity</span><input type="range" name="beatIntensity" min="20" max="100" step="5"><output data-for="beatIntensity"></output></label>
+              <label class="toggle" data-when="beat"><input type="checkbox" name="beatShake"><span class="toggle-track" aria-hidden="true"></span><span>Shake and zoom the background on the bass</span></label>
+              <label class="toggle" data-when="beat"><input type="checkbox" name="beatParticles"><span class="toggle-track" aria-hidden="true"></span><span>Particles stream out, faster on the beat</span></label>
+            </section>
+
+            <section class="field text-group"><h3 class="sec-title">Layer effects</h3>
+              <label class="toggle"><input type="checkbox" name="parallax"><span class="toggle-track" aria-hidden="true"></span><span>Layers follow the cursor</span></label>
+              <label class="toggle"><input type="checkbox" name="burst"><span class="toggle-track" aria-hidden="true"></span><span>Button presses burst layer 1 out</span></label>
+            </section>
+
+            <section class="field text-group"><h3 class="sec-title">Backdrop pattern</h3>
+              <div class="upload-row"><input name="patternUrl" type="url" data-url="upload" placeholder="Logo or image link" aria-label="Pattern image link"><button type="button" class="btn glass-btn sm" data-upload="patternUrl"><svg class="ico"><use href="#i-upload"/></svg>Upload</button></div>
+              <span class="help">Repeats an image, like your logo, across the whole background.</span>
+              <label class="slider" data-needs="patternUrl"><span class="label">Tile size</span><input type="range" name="patternSize" min="24" max="400" step="4"><output data-for="patternSize"></output></label>
+              <label class="slider" data-needs="patternUrl"><span class="label">Strength</span><input type="range" name="patternOpacity" min="0.03" max="1" step="0.01"><output data-for="patternOpacity"></output></label>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <footer class="pop-foot">
+        <p class="form-error" id="formError" role="alert" hidden></p>
+        <div class="foot-row">
+          <button type="button" class="btn glass-btn" id="backBtn"><svg class="ico"><use href="#i-back"/></svg>Back</button>
+          <button type="button" class="btn primary grow" id="nextBtn">Continue<svg class="ico"><use href="#i-arrow"/></svg></button>
+          <button type="submit" class="btn primary grow" id="submitBtn">Take the button</button>
+        </div>
+        <p class="foot-note" id="submitNote"></p>
+      </footer>
+      <input type="file" id="filePick" accept="image/png,image/jpeg,image/gif,image/webp" hidden>
+    </form>
+  </dialog>
+
+  <template id="layerTpl">
+    <details class="layer-card">
+      <summary>
+        <span class="lc-thumb" aria-hidden="true"></span>
+        <span class="lc-text"><span class="lc-title"></span><span class="lc-sum"></span></span>
+        <span class="lc-actions">
+          <button type="button" class="lc-btn" data-act="up" aria-label="Move back">↑</button>
+          <button type="button" class="lc-btn" data-act="down" aria-label="Move forward">↓</button>
+          <button type="button" class="lc-btn" data-act="remove" aria-label="Remove layer"><svg class="ico"><use href="#i-close"/></svg></button>
+        </span>
+      </summary>
+      <div class="lc-body">
+        <div class="seg seg-4">
+          <label><input type="radio" data-k="kind" value="image"><span>Image</span></label>
+          <label><input type="radio" data-k="kind" value="text"><span>Text</span></label>
+          <label><input type="radio" data-k="kind" value="shape"><span>Shape</span></label>
+          <label><input type="radio" data-k="kind" value="emoji"><span>Emoji</span></label>
+        </div>
+        <div data-kind="image" class="lc-row">
+          <div class="upload-row"><input data-k="image" type="url" data-url="upload" placeholder="Logo or product image link" aria-label="Image link"><button type="button" class="btn glass-btn sm" data-upload><svg class="ico"><use href="#i-upload"/></svg>Upload</button></div>
+        </div>
+        <div data-kind="text" class="lc-row"><input data-k="text" maxlength="30" placeholder="Your brand name or a slogan" aria-label="Text"></div>
+        <div data-kind="shape" class="lc-row"><div class="shapes"></div></div>
+        <div data-kind="emoji" class="lc-row">
+          <input data-k="emoji" placeholder="🥤 🧊 🫧" aria-label="Emoji">
+          <div class="chips lc-sets"></div>
+        </div>
+        <div class="lc-grid">
+          <label class="swatch" data-kind="text shape"><input type="color" data-k="color"><span>Color</span></label>
+          <label class="lc-motion"><span class="label">Motion</span>
+            <select data-k="motion">
+              <option value="float">Hover</option><option value="rain">Rain</option><option value="rise">Rise</option>
+              <option value="drift">Drift across</option><option value="orbit">Orbit the button</option><option value="bounce">Bounce</option>
+              <option value="spin">Spin in place</option><option value="pulse">Pulse</option><option value="still">Still</option>
+            </select>
+          </label>
+        </div>
+        <label class="slider"><span class="label">How many</span><input type="range" data-k="count" min="1" max="40"><output></output></label>
+        <label class="slider"><span class="label">Size</span><input type="range" data-k="size" min="10" max="260" step="2"><output></output></label>
+        <label class="slider"><span class="label">Speed</span><input type="range" data-k="speed" min="0.25" max="3" step="0.25"><output></output></label>
+        <label class="slider"><span class="label">Opacity</span><input type="range" data-k="opacity" min="0.1" max="1" step="0.05"><output></output></label>
+        <label class="slider"><span class="label">Blur</span><input type="range" data-k="blur" min="0" max="16"><output></output></label>
+        <label class="toggle"><input type="checkbox" data-k="spin"><span class="toggle-track" aria-hidden="true"></span><span>Spin while moving</span></label>
+      </div>
+    </details>
+  </template>
+
+  <script src="/app.js"></script>
+</body>
+</html>

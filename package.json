@@ -1,0 +1,14 @@
+{
+  "name": "the-button",
+  "version": "1.0.0",
+  "description": "One button, one owner. Outbid the owner and the whole page is yours to customize.",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
